@@ -19,7 +19,7 @@ class contactCreate(contactBase):
 
 # ContactUpdate is basically ContactBase, but first_name and last_name
 # are optional (set to None) so they can be skipped when updating.
-class classUpdate(BaseModel):
+class contactUpdate(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     phone_numbers: Optional[List[str]] = None
